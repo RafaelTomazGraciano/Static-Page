@@ -1,0 +1,101 @@
+:root {
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-heading: 'Roboto', sans-serif;
+
+  --font-family-title: 'Buenard', sans-serif;
+
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  
+  --font-size-h3: 1.25rem;   /* 20px */
+  --font-size-h2: 1.5rem;    /* 24px */
+  --font-size-h1: 2.25rem;   /* 36px */
+
+  /* Colors */
+
+  --color-primary: #030c07;
+  --color-secondary: #fbfaed;
+  --color-accent: #e1c278;
+  
+}
+
+
+/* Remove default margin and padding on the body */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font-family-base);
+
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+header{
+
+    h1{
+        font-family: var(--font-family-title);
+        line-height: 0%;
+        transition: 0.5s;
+    }
+
+    h1:hover{
+        font-size: calc(var(--font-size-h1) + 0.125rem);
+        color: var(--color-accent);
+    }
+
+    ul{
+        list-style: none;
+        display: flex;
+        flex:auto;
+        gap: 2rem;
+
+        li{
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            border: solid 0.1rem var(--color-secondary);
+            border-radius: 0.25rem;
+            transition: all 0.5s;
+        }
+
+        li:hover{
+            padding: 0.5rem;
+            border: none;
+            background-color: var(--color-accent);
+            color:var(--color-primary);
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
+        }
+    }
+
+    padding: 1rem 3rem;
+
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    
+}
+
+h1{
+    font-size: var(--font-size-h1);
+}
+
+h2{
+    font-size: var(--font-size-h2);
+}
+
+h3{
+    font-size: var(--font-size-h3);
+}
+
+#hero-image{
+    height: auto;
+    width: 100%;
+}
