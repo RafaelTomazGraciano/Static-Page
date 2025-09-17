@@ -48,30 +48,30 @@ header{
     ul{
         list-style: none;
         display: flex;
-        flex:auto;
         gap: 2rem;
+        margin: 0;
+        padding: 0;
 
-        li{
+        li {
+            display: block;
+        }
+
+        a {
             display: flex;
             align-items: center;
             gap: 0.5rem;
-            padding: 0.5rem;
+            padding: 0.5rem 1rem;
             border: solid 0.1rem var(--color-secondary);
             border-radius: 0.25rem;
             transition: all 0.5s;
-        }
-
-        li:hover{
-            padding: 0.5rem;
-            border: none;
-            background-color: var(--color-accent);
-            color:var(--color-primary);
-        }
-
-        a{
             text-decoration: none;
             color: inherit;
-            display: inline-block;
+        }
+
+        a:hover {
+            background-color: var(--color-accent);
+            color: var(--color-primary);
+            border-color: var(--color-accent);
         }
     }
 
