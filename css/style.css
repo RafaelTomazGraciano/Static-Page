@@ -216,3 +216,29 @@ footer{
     color: var(--color-accent);
 }
 
+/* para store*/
+
+#store {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#store figure {
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1600px; 
+    margin: 0;
+}
+
+#store figure img {
+    flex: 1 1 0;
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+    display: block;
+}
