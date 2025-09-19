@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"> 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Loja</title>
     
 </head>
@@ -41,10 +42,64 @@
     </header>
     <main>
         <section id="store">
-            <figure>
-                <img class="store" src="assets/elden-ring.png" alt="Elden Ring">
-                <img clas="store-image" src="assets/elden-ring-dlc.png" alt="Elden Ring">
-            </figure>
+            <div class="store-column left">
+                <img class="store-image" src="assets/elden-ring.png" alt="Elden Ring">
+
+                <div class="store-card">
+                    <h2>Elden Ring</h2>
+                    <table class="buy-table">
+                        <thead>
+                            <tr>
+                                <th>Plataforma</th>
+                                <th>Comprar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Steam</td>
+                                <td><a class="button" href="https://store.steampowered.com/app/1245620/ELDEN_RING/">Comprar <i class="fa-brands fa-steam"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Xbox</td>
+                                <td><a class="button" href="https://www.xbox.com/pt-br/games/store/elden-ring/9p3j32ctxlrz">Comprar <i class="fa-brands fa-xbox"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Playstation</td>
+                                <td><a class="button" href="https://www.playstation.com/pt-br/games/elden-ring/">Comprar <i class="fa-brands fa-playstation"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="store-column right">
+                <img class="store-image" src="assets/elden-ring-dlc.png" alt="Elden Ring Shadow Of The Erdtree">
+                <div class="store-card-right">
+                    <h2>Shadow of the Erdtree</h2>
+                    <table class="buy-table">
+                        <thead>
+                            <tr>
+                                <th>Plataforma</th>
+                                <th>Comprar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Steam</td>
+                                <td><a class="button" href="https://store.steampowered.com/app/2778580/ELDEN_RING_Shadow_of_the_Erdtree/">Comprar <i class="fa-brands fa-steam"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Xbox</td>
+                                <td><a class="button" href="https://www.xbox.com/pt-BR/games/store/elden-ring-shadow-of-the-erdtree/9PMPZZLKQM43">Comprar <i class="fa-brands fa-xbox"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td>Playstation</td>
+                                <td><a class="button" href="https://store.playstation.com/pt-br/product/UP0700-PPSA04610_00-ELDENRINGDLC0000">Comprar <i class="fa-brands fa-playstation"></i></a> </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
